@@ -1,0 +1,77 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h2>Opciones</h2>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="btn btn-primary crear-dialog-window" asp-action="GetOpcion">
+                    Nuevo <i class="fa-solid fa-square-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Opción</th>
+                    <th>Controller</th>
+                    <th>Acción</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Id</th>
+                    <th>Opción</th>
+                    <th>Controller</th>
+                    <th>Acción</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="Crear" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="titulo">Nuevo Registro</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body teeee">
+                <p>One fine body&hellip;</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Edit" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="titulo">Editar Registro</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body teeee">
+                <p>One fine body&hellip;</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/opciones/opciones.js"></script>
+}

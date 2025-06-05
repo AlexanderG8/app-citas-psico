@@ -1,0 +1,22 @@
+﻿@using app_citas_psico.Models.Procedures
+@model IEnumerable<SP_LISTA_OPCIONES_USUARIO>
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+           with font-awesome or any other icon font library -->
+        <li>Barra de Navegación</li>
+        @foreach (var item in Model)
+        {
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="@item.CONTROLLER" asp-action="@item.ACCION">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>
+                        @item.OPCION
+                    </p>
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
+<!-- /.sidebar-menu -->

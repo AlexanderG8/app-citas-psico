@@ -1,0 +1,22 @@
+﻿@model ROL
+@{
+    ViewData["Title"] = "ROL";
+    var tipo = "E";
+}
+<form>
+    <input type="hidden" asp-for="ID_ROL" id="identificadorE">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label>Opción</label>
+                <input asp-for="NOMBRE_ROL" class="form-control" type="text" placeholder="Nombre del rol" id="nombre_rolE" />
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12" id="MensajeError">
+    </div>
+    <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" onclick="SaveRol(`@tipo`)" id="btnGuardarE">Guardar</button>
+    </div>
+</form>
